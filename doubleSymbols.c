@@ -3,13 +3,15 @@
 int main()
 {
     int n;
-    printf("ใส่ตัวเลข : ");
     scanf("%d", &n);
 
     if (n % 2 == 0) {
-        printf("%d เลขคู่ ", n);
+        for (int i = 0; i < n; i +=2) 
+        {
+            printf("*+");
+        }
     } else {
-        printf("%d เลขคี่ ", n);
+        printf("Wrong input");
     }
 }
 
